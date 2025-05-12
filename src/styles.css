@@ -1,0 +1,173 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    
+    font-size: small;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Make container fill the screen */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* Header spans full width */
+  header {
+    font-family: 'Watch MN', sans-serif;
+    background: #000305;
+    color: white;
+    padding: 3rem 1rem;    
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    left: 0;
+    font-size: 1.3rem;
+  }
+
+
+  header h1 {
+    font-size: 2.8rem;        /* Larger title */
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigation links */
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+
+    transition: color 0.2s ease;
+    margin: 0 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;        /* Bigger nav links */
+  }
+
+  nav a:hover {
+    color: rgb(115, 255, 0);
+    text-decoration:none;
+  }
+  
+  /* Main content fills remaining space */
+  main {
+    flex: 1;
+    padding: 2rem 3vw;
+  }
+  
+  /* Section spacing */
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    margin-bottom: 0.5rem;
+    color: #0077cc;
+  }
+  
+  /* Footer sticks to bottom */
+  footer {
+    background: #eee;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+@font-face {
+    font-family: 'Watch MN';
+    src: url('/fonts/WatchMN.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .image-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  @keyframes shake-wiggle {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    20%  { transform: translate(-2px, 1px) rotate(-2deg); }
+    40%  { transform: translate(2px, -1px) rotate(2deg); }
+    60%  { transform: translate(-2px, 1px) rotate(-2deg); }
+    80%  { transform: translate(2px, -1px) rotate(2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+  #Description {
+  font-family: 'Watch MN', sans-serif;
+  max-width: 800px;       /* Limit width for better readability */
+  margin: 0 auto;         /* Center the section */
+  padding: 2rem 1rem;
+  line-height: 1.4;       /* Tighter line spacing */
+  font-size: 1.2rem;      /* Optional: adjust font size */
+  letter-spacing: -0.2px; /* Slightly tighter letters */
+}
+.image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  width: 600px;   /* Increase this value for larger images */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.tape-page {
+  text-align: center;
+  padding: 2rem;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #222;
+  border-radius: 8px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.back-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
