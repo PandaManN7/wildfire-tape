@@ -20,7 +20,7 @@ function App() {
         <nav>
           <Link to="/">TAPE</Link>
           <Link to="/signup">SIGN-UP</Link>
-           <Link to="/lockbox">SIGN-UP</Link>
+           <Link to="/lockbox">LOCKBOX</Link>
         </nav>
       </header>
 

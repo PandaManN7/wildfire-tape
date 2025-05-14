@@ -6,14 +6,23 @@ function VHS3() {
 
   return (
     <div className="tape-page">
-      <h2>Tape 3</h2>
-      <div className="video-container">
-        <video width="640" height="360" controls>
-          <source src="/videos/Tape3.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <button onClick={() => navigate(-1)} className="back-button">Back</button>
+
+      <h3>STAY QUIET AND GO TO THE 2ND FLOOR OF THE LIBRARY. FIND THE MIDDLE AISLE UNTIL YOU REACH THE POETRY BOOKS. 
+        BELOW THEM IS A METAL SHELF. OPEN IT UP CAREFULLY. THE FINAL TAPE IS UNDERNEATH.</h3>
+      <div className="video-wrapper">
+        <iframe 
+          width="860" 
+          height="715" 
+          src="https://www.youtube.com/embed/bs_FneYirxU" 
+          title="YouTube video player" 
+          frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowFullScreen
+        >
+        </iframe>
+
       </div>
+      <button onClick={() => navigate(-1)} className="back-button">Back</button>
     </div>
   );
 }

@@ -1,121 +1,110 @@
 /* Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html, body {
-    
-    font-size: small;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    overflow-x: hidden;
-  }
-  
-  /* Make container fill the screen */
-  .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-  }
-  
-  /* Header spans full width */
-  header {
-    font-family: 'Watch MN', sans-serif;
-    background: #000305;
-    color: white;
-    padding: 3rem 1rem;    
-    text-align: center;
-    width: 100vw;
-    position: relative;
-    left: 0;
-    font-size: 1.3rem;
-  }
-
-
-  header h1 {
-    font-size: 2.8rem;        /* Larger title */
-    margin-bottom: 1rem;
-  }
-  
-  /* Navigation links */
-  nav {
-    margin-top: 1rem;
-  }
-  
-  nav a {
-
-    transition: color 0.2s ease;
-    margin: 0 1.5rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.3rem;        /* Bigger nav links */
-  }
-
-  nav a:hover {
-    color: rgb(115, 255, 0);
-    text-decoration:none;
-  }
-  
-  /* Main content fills remaining space */
-  main {
-    flex: 1;
-    padding: 2rem 3vw;
-  }
-  
-  /* Section spacing */
-  section {
-    margin-bottom: 3rem;
-  }
-  
-  h2 {
-    margin-bottom: 0.5rem;
-    color: #0077cc;
-  }
-  
-  /* Footer sticks to bottom */
-  footer {
-    background: #eee;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    width: 100%;
-    font-size: 0.9rem;
-  }
-@font-face {
-    font-family: 'Watch MN';
-    src: url('/fonts/WatchMN.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  .image-grid {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-  }
-  @keyframes shake-wiggle {
-    0%   { transform: translate(0, 0) rotate(0deg); }
-    20%  { transform: translate(-2px, 1px) rotate(-2deg); }
-    40%  { transform: translate(2px, -1px) rotate(2deg); }
-    60%  { transform: translate(-2px, 1px) rotate(-2deg); }
-    80%  { transform: translate(2px, -1px) rotate(2deg); }
-    100% { transform: translate(0, 0) rotate(0deg); }
-  }
-  #Description {
-  font-family: 'Watch MN', sans-serif;
-  max-width: 800px;       /* Limit width for better readability */
-  margin: 0 auto;         /* Center the section */
-  padding: 2rem 1rem;
-  line-height: 1.4;       /* Tighter line spacing */
-  font-size: 1.2rem;      /* Optional: adjust font size */
-  letter-spacing: -0.2px; /* Slightly tighter letters */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+html, body {
+  font-size: small;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Make container fill the screen */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Header spans full width */
+header {
+  font-family: 'Watch MN', sans-serif;
+  background: #000305;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  left: 0;
+  font-size: 1.3rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  transition: color 0.2s ease;
+  margin: 0 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+nav a:hover {
+  color: rgb(115, 255, 0);
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 3vw;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  color: #0077cc;
+}
+
+footer {
+  background: #eee;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Watch MN';
+  src: url('/fonts/WatchMN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Consola';
+  src: url('/fonts/CONSOLA.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Animation */
+@keyframes shake-wiggle {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-2px, 1px) rotate(-2deg); }
+  40% { transform: translate(2px, -1px) rotate(2deg); }
+  60% { transform: translate(-2px, 1px) rotate(-2deg); }
+  80% { transform: translate(2px, -1px) rotate(2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Image Grid */
 .image-grid {
   display: flex;
   justify-content: center;
@@ -125,7 +114,8 @@
 }
 
 .image-grid img {
-  width: 600px;   /* Increase this value for larger images */
+  width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -136,6 +126,7 @@
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
 }
 
+/* Tape Page */
 .tape-page {
   text-align: center;
   padding: 2rem;
@@ -148,11 +139,10 @@ video {
   border-radius: 8px;
 }
 
-.video-container {
+.video-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
+  justify-content: center;
+  margin: 2rem auto;
 }
 
 .back-button {
@@ -170,4 +160,47 @@ video {
 .back-button:hover {
   transform: scale(1.05);
   background-color: #333;
+}
+
+/* Instructions + Description Layout */
+.text-sections {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10rem;
+  padding: 10rem 1rem;
+}
+
+.instructions,
+.description {
+  font-family: 'Consola';
+  flex: 1;
+  font-size: 1.4rem; /* Increased from default (~1rem) */
+  line-height: 1.8;
+}
+
+.instructions img,
+.description img {
+  width: 100%;
+  max-width: 1000px; /* was 400px */
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsive Layout */
+@media screen and (min-width: 768px) {
+  .instructions,
+  .description {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+  }
+
+  .instructions img,
+  .description img {
+    margin: 1rem auto;
+  }
 }
