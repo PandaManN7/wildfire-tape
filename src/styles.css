@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 5.8rem;
   margin-bottom: 1rem;
 }
 
@@ -49,7 +49,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 3.3rem;
 }
 
 nav a:hover {
@@ -66,10 +66,6 @@ section {
   margin-bottom: 3rem;
 }
 
-h2 {
-  margin-bottom: 0.5rem;
-  color: #0077cc;
-}
 
 footer {
   background: #eee;
@@ -104,7 +100,7 @@ footer {
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-/* Image Grid */
+
 .image-grid {
   display: flex;
   justify-content: center;
@@ -126,7 +122,6 @@ footer {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
 }
 
-/* Tape Page */
 .tape-page {
   text-align: center;
   padding: 2rem;
@@ -162,21 +157,22 @@ video {
   background-color: #333;
 }
 
-/* Instructions + Description Layout */
+
 .text-sections {
   
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10rem;
-  padding: 10rem 1rem;
+  gap: 8rem;
+  padding: 8rem 1rem;
 }
 
 .instructions,
 .description {
   font-family: 'Consola';
+  color:green;
   flex: 1;
-  font-size: 1.4rem; /* Increased from default (~1rem) */
+  font-size: 1.4rem;
   line-height: 1.8;
 }
 
@@ -203,4 +199,43 @@ video {
   .description img {
     margin: 1rem auto;
   }
+}
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.responsive-iframe {
+  position: relative;
+  width: 100%;
+  max-width: 800px;        /* Prevents video from getting too wide on desktops */
+  margin: 0 auto;          /* Center horizontally */
+  padding-bottom: 56.25%;  /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tape-page {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.Tape-text{
+  font-size: 2.4rem;
+  gap: 15rem;
+  padding: 5rem;
 }

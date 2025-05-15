@@ -6,13 +6,13 @@ function VHS3() {
 
   return (
     <div className="tape-page">
-
-      <h3>STAY QUIET AND GO TO THE 2ND FLOOR OF THE LIBRARY. FIND THE MIDDLE AISLE UNTIL YOU REACH THE POETRY BOOKS. 
-        BELOW THEM IS A METAL SHELF. OPEN IT UP CAREFULLY. THE FINAL TAPE IS UNDERNEATH.</h3>
+        <div className="Tape-text">
+          <h3>STAY QUIET AND GO TO THE 2ND FLOOR OF THE LIBRARY. FIND THE MIDDLE AISLE UNTIL YOU REACH THE POETRY BOOKS. 
+            BELOW THEM IS A METAL SHELF. OPEN IT UP CAREFULLY. THE FINAL TAPE IS UNDERNEATH.</h3>
+        </div>
       <div className="video-wrapper">
+        <div className="responsive-iframe">
         <iframe 
-          width="860" 
-          height="715" 
           src="https://www.youtube.com/embed/bs_FneYirxU" 
           title="YouTube video player" 
           frameBorder="0" 
@@ -20,7 +20,7 @@ function VHS3() {
           allowFullScreen
         >
         </iframe>
-
+      </div>
       </div>
       <button onClick={() => navigate(-1)} className="back-button">Back</button>
     </div>
