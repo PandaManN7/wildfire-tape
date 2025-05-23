@@ -23,7 +23,7 @@ function Lockbox() {
       {!isUnlocked ? (
         <form onSubmit={handleSubmit}>
           <img
-            src="/images/lookbox.jpg"
+            src="/images/wf_lockbox4.png"
             alt="Lockbox visual"
             className="lockbox-image"
           />
