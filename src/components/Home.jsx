@@ -19,6 +19,9 @@ function Home() {
         <div className="instructions">
           <img src="/images/wf.tape.jpg" alt="Image 1" />
           <h2>
+            INSTRUCTIONS:
+          </h2>
+          <h2>
             1. VHS TAPES (1–3) ARE SCATTERED ACROSS THE CITY. EACH TAPE CONTAINS A PORTION OF THE FULL PASSWORD. YOU WILL NEED A VCR TO WATCH THE TAPE.
           </h2>
           <h2>
