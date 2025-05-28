@@ -167,14 +167,18 @@ video {
   padding: 8rem 1rem;
 }
 
-.instructions,
-.description {
+
+.instructions h2,
+.description h2{
   font-family: 'Consola';
   color:black;
   flex: 1;
   font-size: 1.4rem;
-  line-height: 1.8;
+  line-height: 2.0;
+  white-space: 5;
+  margin-bottom: 15px;
 }
+
 
 .instructions img,
 .description img {
